@@ -1,0 +1,23 @@
+org: yangzhi
+app: aws-python-scheduled-cron
+service: aws-python-scheduled-cron
+
+frameworkVersion: '2 || 3'
+
+
+provider:
+  name: aws
+  runtime: python3.8
+  environment:
+    TELEGRAM_TOKEN: ${env:TELEGRAM_TOKEN}
+
+functions:
+  rateHandler:
+    handler: handler.run
+    events:
+      # Invoke Lambda function every minute
+      - schedule: rate(1 minute)
+      # - schedule: cron(00 21 * * ? *)
+  
+plugins:
+  - serverless-python-requirements
