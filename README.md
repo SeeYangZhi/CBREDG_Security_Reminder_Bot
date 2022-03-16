@@ -1,7 +1,14 @@
 ## Introduction
 
-This project deploys a telegram bot applications to AWS' serverless infrastructure - Lambda, using the Serverless Framework Component.
-The application will never charge for idle time, and require little-to-zero administration.
+This project deploys the backend for the Weekly Security Message Reminder Telegram Bot to AWS, using the Serverless Framework Component.
+
+AWS Lambda is used for this project as it is low maintenance, scalable, and cheap for infrequent workloads (In this case, AWS offers 1 million requests free per month with the AWS Free Tier. The application will never charge for idle time, and require little-to-zero administration.
+
+AWS Dynamo DB is chosen to store the states of the application. (AWS offers Dynamo DB with 25 GB of storage and up to 200 million read/write requests per month with the AWS Free Tier).
+
+*_AWS Lambda is a serverless, event-driven compute service that lets you run code for virtually any type of application or backend service without provisioning or managing servers._
+
+*_AWS Dynamo DB is a fast, flexible NoSQL database service for single-digit millisecond performance at any scale_
 
 ## Quick Start
 
@@ -14,9 +21,12 @@ npm install -g serverless
 
 ### 2. Deploy
 
-You can use following command to deploy the APP.
+You can use following command to deploy the APP. 
 
 ```bash
+export TELEGRAM_TOKEN=123
+export AWS_ACCESS_KEY_ID=123
+export AWS_SECRET_ACCESS_KEY=123
 serverless deploy
 ```
 
@@ -42,16 +52,6 @@ just run `serverless remove` and serverless will remove all the data it needs fr
 serverless remove
 ```
 
-### Setting up credentials (Optional)
-
-```bash
-# Add your Tencent credentials here
-touch .env
-```
-
-```
-# .env file
-TELEGRAM_TOKEN=123
-AWS_ACCESS_KEY_ID=123
-AWS_SECRET_ACCESS_KEY=123
-```
+### TODOs
+1. Better Error Management.
+2. Store and consume messages through Dynamo DB.

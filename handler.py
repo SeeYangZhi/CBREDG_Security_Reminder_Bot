@@ -1,7 +1,7 @@
-from telegram import Bot
-import os
-from decimal import Decimal
 import boto3
+import os
+from telegram import Bot
+from decimal import Decimal
 from botocore.exceptions import ClientError
 
 DYNAMODB = boto3.resource("dynamodb", region_name="ap-southeast-1")
@@ -30,7 +30,7 @@ def increment_counter():
 
 
 def get_counter():
-    table = DYNAMODB.Table("CBREDG_Security_Alert_Counter")
+    table = DYNAMODB.Table("CBREDG_Weekly_Security_Message")
     try:
         response = table.get_item(Key={"index": 0})
     except ClientError as e:
@@ -40,7 +40,7 @@ def get_counter():
 
 
 TOKEN = os.environ["TELEGRAM_TOKEN"]
-CHAT_ID = "-749393302"
+CHAT_ID = os.environ["CHAT_ID"]
 message_list = ["msg0", "msg1", "msg2", "msg3", "msg4", "msg5"]
 bot = Bot(token=TOKEN)
 
