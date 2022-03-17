@@ -1,5 +1,5 @@
 {
-    "Personal Data": [
+    "Personal_Data": [
         "Do not disclose any personal details to any unknown person. Personal data should only be disclosed to known personnel on a \"need-to-know\" basis.",
         "Do not display any form of personal data that can identify an individual in a Restricted document unless necessary e.g. RO, reports etc.",
         "Documents containing personal data e.g. nominal roll should not be sent out to large group of recipients unnecessary. When necessary, only include relevant data in the document.",
@@ -9,29 +9,29 @@
     "Document": [
         "Classified documents should not be reproduced without authorisation.",
         "All classified documents should be shred in an MSD aproved shrerdder and not disposed of in trash bins.",
-        "Classified documents should not be left unattended during/ after office hours. Apply \"clear desk\" principles after office hours.",
-        "Classified documents should be kept under appropriate lock and key after office hours",
-        "Any loss of classified documents *MUST* be reported to the immediate superior as soon as the loss is discovered."
+        "Classified documents should not be left unattended during/after office hours. Apply \"clear desk\" principles after office hours.",
+        "Classified documents should be kept under appropriate lock and key after office hours.",
+        "Any loss of classified documents <b>MUST</b> be reported to the immediate superior as soon as the loss is discovered."
     ],
-    "Personal Device": [
-        "*NO* usage of camera enabled mobile phone in red zone.",
+    "Personal_Device": [
+        "<b>NO</b> usage of camera enabled mobile phone in red zone.",
         "No in-camp photographs should be present in personal mobile phone.",
-        "No pornographic materials should be present in personal mobile phone",
+        "No pornographic materials should be present in personal mobile phone.",
         "No usage of pesonal storage media e.g. thumb drive on official computer.",
-        "Personal electronic devices shall not be connected to any MINDE/SAF networks or systems *AT ALL TIMES*."
+        "Personal electronic devices shall not be connected to any MINDE/SAF networks or systems <b>AT ALL TIMES</b>."
     ],
-    "Computers and IT": [
-        "Users are not allowed to install any software into MINDEF/SAF's computer system *AT ALL TIMES*.",
+    "Computers_and_IT": [
+        "Users are not allowed to install any software into MINDEF/SAF's computer system <b>AT ALL TIMES</b>.",
         "Portable devices and storage media should not be left unattended.",
-        "Only authorised IT devices are allowed to connect to MINDEF/ SAF network.",
-        "Only use Flashguards as the mean for data transfer between MINDEF/ SAF IT system.",
+        "Only authorised IT devices are allowed to connect to MINDEF/SAF network.",
+        "Only use Flashguards as the mean for data transfer between MINDEF/SAF IT system.",
         "Users of portable devices e.g. notebook computers, tablets and mobile devices shall store the minimum amount of information that is required to carry out their work on their device(s)."
     ],
     "Information": [
         "Do not create nor host any website which displays classified information e.g. code names and layout of key installations.",
         "Only materials classified up to RESTRICTED can be processed on the INET. Remove all classified materials from the INET once it is no longer required.",
-        "Do not post/ blog participation or accomplishments of exercises/ projects on digital/ social media platforms e.g. Instagram, Linkedin etc.",
-        "Verify identify of the other party when being approached and asked to disclose classified/ sensitive information. When in doubt, always seek clarification from immediate superiror.",
-        "Users are not to forward/ share any received information without verifying its authenticity. When in doubt, always seek clarification from immediate superior."
+        "Do not post/blog participation or accomplishments of exercises/projects on digital/social media platforms e.g. Instagram, Linkedin etc.",
+        "Verify identify of the other party when being approached and asked to disclose classified/sensitive information. When in doubt, always seek clarification from immediate superiror.",
+        "Users are not to forward/share any received information without verifying its authenticity. When in doubt, always seek clarification from immediate superior."
     ]
 }

@@ -27,7 +27,8 @@ You can use following command to deploy the APP.
 export TELEGRAM_TOKEN=123
 export AWS_ACCESS_KEY_ID=123
 export AWS_SECRET_ACCESS_KEY=123
-serverless deploy
+export CHAT_ID=123
+serverless
 ```
 
 ### 3. Monitor
