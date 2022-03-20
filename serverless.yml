@@ -1,9 +1,8 @@
 org: yangzhi
-app: aws-python-scheduled-cron
-service: aws-python-scheduled-cron
+app: aws-lambda-scheduled-telebot
+service: cron-scheduled-telegram-bot
 
 frameworkVersion: '2 || 3'
-
 
 provider:
   name: aws
@@ -11,7 +10,7 @@ provider:
   iam:
     role:
       statements:
-        - Effect: "Allow"
+        - Effect: 'Allow'
           Action:
             - dynamodb:Query
             - dynamodb:Scan
@@ -19,8 +18,8 @@ provider:
             - dynamodb:PutItem
             - dynamodb:UpdateItem
             - dynamodb:DeleteItem
-          Resource: 
-            - "arn:aws:dynamodb:ap-southeast-1:918183059025:table/CBREDG_Weekly_Security_Message"
+          Resource:
+            - 'arn:aws:dynamodb:ap-southeast-1:918183059025:table/CBREDG_Weekly_Security_Message'
   region: ap-southeast-1
   environment:
     TELEGRAM_TOKEN: ${env:TELEGRAM_TOKEN}
@@ -32,6 +31,6 @@ functions:
     events:
       # Invoke Lambda function every Monday at 10AM GMT+8
       - schedule: cron(00 02 ? * MON *)
-  
+
 plugins:
   - serverless-python-requirements
